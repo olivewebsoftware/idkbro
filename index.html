@@ -1,0 +1,54 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+<script language="JavaScript">
+
+            var NumberOfImages = 10
+            var img = new Array(NumberOfImages)
+
+            img[0] = "https://olivewebsoftware.github.io/oliveweb/olimg.png"
+            img[1] = "https://olivewebsoftware.github.io/oliveweb/olimg.png"
+            img[2] = "https://olivewebsoftware.github.io/oliveweb/olimg.png"
+            img[3] = "https://olivewebsoftware.github.io/oliveweb/olimg.png"
+            img[4] = "https://olivewebsoftware.github.io/oliveweb/olimg.png"
+            img[5] = "https://olivewebsoftware.github.io/oliveweb/olimg.png"
+            img[6] = "https://olivewebsoftware.github.io/oliveweb/olimg.png"
+            img[7] = "https://olivewebsoftware.github.io/oliveweb/olimg.png"
+            img[8] = "https://olivewebsoftware.github.io/oliveweb/olimg.png"
+            img[9] = "https://olivewebsoftware.github.io/oliveweb/olimg.png"
+
+            var imgNumber = 0
+            function NextImage()
+            {
+                imgNumber++
+                if (imgNumber == NumberOfImages)
+                    imgNumber = 0
+                document.images["VCRImage"].src = img[imgNumber]
+            }
+            function PreviousImage()
+            {
+                imgNumber--
+                if (imgNumber < 0)
+                    imgNumber = NumberOfImages - 1
+                document.images["VCRImage"].src = img[imgNumber]
+            }
+
+
+</script>
+
+
+
+<body>
+<center>
+
+<img name="VCRImage" src="http://damnthisfunny.site40.net/1.jpg" /></dr>
+<br />
+<a href="javascript:PreviousImage()">
+<img border="0" src="left1.jpg" /></a>
+<a href="javascript:NextImage()">
+<img border="0" src="right1.jpg" /></a>
+</center>
+</body>
+</html>
